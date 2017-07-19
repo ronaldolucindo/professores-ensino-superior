@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trabalho prático 4 da disciplina de Visualização de dados">
+    <meta name="author" content="Ronaldo Medeiros Lucindo">
+    <title>Perfil Professores do Ensino Superior</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendors/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="assets/css/main.css" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1><strong>Perfil dos Professores do Ensino Superior <br/><small>Um Comparativo entre instituições públicas e privadas brasileiras</small></strong></h1>
+      <p><small><strong>DADOS:</strong> CENSO DO ENSINO SUPERIOR 2014</p>
+      <p><a href="http://ronaldo.lucindo.net/">RONALDO MEDEIROS LUCINDO</a></small>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center h1"><strong>396.595</strong> <small>professores</small></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Dados Ensino Público</h2>
+          <h3 class="h1"><strong>163.582</strong> <small>professores</small></h3>
+          
+        </div>
+        <div class="col-md-6">
+          <h2>Dados Ensino Privado</h2>
+          <h3 class="h1"><strong>225.413</strong> <small>professores</small></h3>
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="text-center h1">Faixa Etária</h3>
+        <div id="faixa-pub" class="col-md-6">
+          
+        </div>
+        <div id="faixa-priv" class="col-md-6">
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 class="text-center h1">Escolaridade</h3>
+        <div id="escolaridade-pub" class="col-md-12">
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 class="text-center h1">Cor Declarada</h3>
+        <div id="raca-cor-pub" class="col-md-6">
+          
+        </div>        
+        <div id="raca-cor-priv" class="col-md-6">
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 class="text-center h1">Estados e Instituições com mais Professores</h3>
+        <p><em>Clique no tipo de instituição/estado para mais detalhes. Para subir um nível no gráfico clique no topo. Para saber o número de professores de um estado ou instituição basta deixar o mouse sobre o quadrado.</em></p>
+        <div id="instituicoes" class="col-md-12">
+          
+        </div>
+      </div>
+
+
+<!--       <div class="row">
+        <h3 class="text-center">Instituições com mais Professores</h3>
+        <div id="prof-uni-pub" class="col-md-6">
+          <table class="table table-striped table-condensed">
+            <thead>
+              <tr>
+                <th >Instituição</th>
+                <th >Professores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Universidade de São Paulo</td>
+                <td>6.435</td>
+              </tr>
+              <tr>
+                <td>Universidade Estadual Paulista Júlio de Mesquita Filho</td>
+                <td>4.331</td>
+              </tr>
+              <tr>
+                <td>Universidade Federal do Rio de Janeiro</td>
+                <td>4.061</td>
+              </tr>
+              <tr>
+                <td>Universidade Federal Fluminense</td>
+                <td>3.648</td>
+              </tr>
+              <tr>
+                <td>Universidade Federal de Minas Gerais</td>
+                <td>3.292</td>
+              </tr> 
+              <tr>
+                <td>Universidade Federal da Bahia</td>
+                <td>3.071</td>
+              </tr>
+              <tr>
+                <td>Universidade Federal de Goiás</td>
+                <td>2.890</td>
+              </tr>
+              <tr>
+                <td>Universidade de Brasília</td>
+                <td>2.872</td>
+              </tr>
+              <tr>
+                <td>Universidade Federal de Pernambuco</td>
+                <td>2.844</td>
+              </tr>
+              <tr>
+                <td>Universidade Federal do Rio Grande do Sul</td>
+                <td>2.749</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div id="prof-uni-priv" class="col-md-6">
+          <table class="table table-striped table-condensed">
+            <thead>
+              <tr>
+                <th >Instituição</th>
+                <th >Professores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Universidade Paulista</td>
+                <td>6.737</td>
+              </tr>
+              <tr>
+                <td>Universidade Estácio de Sá</td>
+                <td>3.191</td>
+              </tr>
+              <tr>
+                <td>Universidade Nove de Julho</td>
+                <td>2.770</td>
+              </tr>
+              <tr>
+                <td>Pontifícia Universidade Católica de Minas Gerais</td>
+                <td>2.292</td>
+              </tr>
+              <tr>
+                <td>Centro Universitário das Faculdades Metropolitanas Unidas</td>
+                <td>1.835</td>
+              </tr> 
+              <tr>
+                <td>Pontifícia Universidade Católica do Paraná</td>
+                <td>1.765</td>
+              </tr>
+              <tr>
+                <td>Pontifícia Universidade Católica de Goiás</td>
+                <td>1.710</td>
+              </tr>
+              <tr>
+                <td>Pontifícia Universidade Católica de São Paulo</td>
+                <td>1.585</td>
+              </tr>
+              <tr>
+                <td>Pontifícia Universidade Católica do Rio Grande do Sul</td>
+                <td>1.419</td>
+              </tr>
+              <tr>
+                <td>Pontifícia Universidade Católica do Rio de Janeiro</td>
+                <td>1.320</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div> -->
+      
+
+    </div><!-- /.container -->
+
+    <!-- Importando scripts -->
+    <script type="text/javascript" src="vendors/js/jquery.min.js?v=1"></script>
+    <script type="text/javascript" src="vendors/js/bootstrap.min.js?v=1"></script>
+    <script type="text/javascript" src="vendors/js/d3.v3.min.js?v=1"></script>
+    <script type="text/javascript" src="vendors/js/d3.legend.js"></script>
+    <script type="text/javascript" src="vendors/js/d3.tip.v0.6.3.js"></script>
+    <script type="text/javascript" src="assets/js/barra0.js"></script>
+    <script type="text/javascript" src="assets/js/barra1.js"></script>
+    <script type="text/javascript" src="assets/js/donut0.js"></script>
+    <script type="text/javascript" src="assets/js/treemap.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/bubble.js"></script> -->
+    <script type="text/javascript" src="assets/js/bubble2.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/donut1.js"></script> -->
+  </body>
+</html>

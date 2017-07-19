@@ -1,0 +1,50 @@
+{
+  "name": "root",
+  "children": [
+    {
+     "name": "Branca",
+     "children": [
+      {"name": "Branca", "size": 61365}
+     ]
+    },
+    {
+     "name": "Indigena",
+     "children": [
+      {"name": "Indigena", "size": 197}
+     ]
+    },
+    {
+     "name": "Não quis declarar",
+     "children": [
+      {"name": "Não quis declarar", "size": 61447}
+     ]
+    },
+    {
+     "name": "Amarela",
+     "children": [
+      {"name": "Amarela", "size": 1663}
+     ]
+    },
+    {
+     "name": "Preta",
+     "children": [
+      {"name": "Preta", "size": 2567}
+     ]
+    },
+    {
+     "name": "Sem informação",
+     "children": [
+      {"name": "Sem informação", "size": 18030}
+     ]
+    },
+    {
+     "name": "Parda",
+     "children": [
+      {"name": "Parda", "size": 18313}
+     ]
+    }
+
+  ]
+
+
+}
