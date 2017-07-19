@@ -1,0 +1,1 @@
+Visualização que proproem uma visão geral dos professores do ensino superior no Brasil implementada usando a biblioteca d3 e dados do Censo do Ensino Superior de 2014. Sendo possível visualizar a faixa etária dos professores, formação, cor declarada e estado/universidade em que atuam.
